@@ -1,4 +1,3 @@
-import inspect
 import tkinter as tk
 import ttkbootstrap as ttk
 
@@ -71,29 +70,31 @@ buttons_vars = [tk.StringVar(), tk.StringVar(), tk.StringVar(),
                 tk.StringVar(), tk.StringVar(), tk.StringVar(),
                 tk.StringVar(), tk.StringVar(), tk.StringVar()]
 
+font = "Helvetica 40 bold"
+
 row_1 = ttk.Frame(master=window)
 (tk.Button(master=row_1, textvariable=buttons_vars[0], command=lambda: handle_play(0),
-           font="Helvetica 40 bold", width=3).pack(side='left'))
+           font=font, width=3).pack(side='left'))
 (tk.Button(master=row_1, textvariable=buttons_vars[1], command=lambda: handle_play(1),
-           font="Helvetica 40 bold", width=3).pack(side='left', padx=10))
+           font=font, width=3).pack(side='left', padx=10))
 (tk.Button(master=row_1, textvariable=buttons_vars[2], command=lambda: handle_play(2),
-           font="Helvetica 40 bold", width=3).pack(side='left'))
+           font=font, width=3).pack(side='left'))
 row_1.pack()
 row_2 = ttk.Frame(master=window)
 (tk.Button(master=row_2, textvariable=buttons_vars[3], command=lambda: handle_play(3),
-           font="Helvetica 40 bold", width=3).pack(side='left'))
+           font=font, width=3).pack(side='left'))
 (tk.Button(master=row_2, textvariable=buttons_vars[4], command=lambda: handle_play(4),
-           font="Helvetica 40 bold", width=3).pack(side='left', padx=10))
+           font=font, width=3).pack(side='left', padx=10))
 (tk.Button(master=row_2, textvariable=buttons_vars[5], command=lambda: handle_play(5),
-           font="Helvetica 40 bold", width=3).pack(side='left'))
+           font=font, width=3).pack(side='left'))
 row_2.pack(pady=10)
 row_3 = ttk.Frame(master=window)
 (tk.Button(master=row_3, textvariable=buttons_vars[6], command=lambda: handle_play(6),
-           font="Helvetica 40 bold", width=3).pack(side='left'))
+           font=font, width=3).pack(side='left'))
 (tk.Button(master=row_3, textvariable=buttons_vars[7], command=lambda: handle_play(7),
-           font="Helvetica 40 bold", width=3).pack(side='left', padx=10))
+           font=font, width=3).pack(side='left', padx=10))
 (tk.Button(master=row_3, textvariable=buttons_vars[8], command=lambda: handle_play(8),
-           font="Helvetica 40 bold", width=3).pack(side='left'))
+           font=font, width=3).pack(side='left'))
 row_3.pack()
 
 # run
